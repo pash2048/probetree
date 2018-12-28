@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #69694b;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #0f564e;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background-color: #78F7EE;
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 25px 50px;
+}
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+/*my custom css*/
+.num{
+	width: 5%;
+}
+.header{
+	width: 65%;
+}
+.headerOff{
+	width: 95%;
+}
+.searchEngine{
+	width: 15%;
+	text-align: center;
+}
+.google{
+	color: #2ba14b;
+}
+.yahoo{
+	color: #7B0099;
+}
+.bing{
+	color: #008473;
+}
+.offer{
+	color: #848484;
+}
+.blink{
+	animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.container{
+	padding: 0 10%;
+}
+#bt{
+	background-color: #fff;
+	color: #78F7EE;
+	border: 1px solid #ced4da;
+}
+.btn:focus{
+	-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    -o-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+.form-control:focus{
+	border-color: transparent;
+	-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    -o-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+td.one{
+	color: rgba(4,172,28,1.00);
+}
+td.two{
+	color: rgba(11,26,193,1.00);
+}
+td.three{
+	color: rgba(153,167,8,1.00);
+}
